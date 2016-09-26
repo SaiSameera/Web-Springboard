@@ -1,0 +1,27 @@
+﻿<div>
+    <h4>By Demand classification</h4>
+    <div style="height:200px;overflow-y:auto" data-ng-init="getDemandClassificationData()">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Classification</th>
+                    <th>Onsite</th>
+                    <th>Offshore</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in byDemandClassificationList">
+                    <td>
+                        {{item.Key}}
+                    </td>
+                    <td>
+                        {{item.Onsite}}
+                    </td>
+                    <td>
+                        {{item.Offshore}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
